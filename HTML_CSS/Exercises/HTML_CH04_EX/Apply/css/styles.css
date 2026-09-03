@@ -1,0 +1,22 @@
+/*
+    Student Name: Derek Tillman
+    File Name: styles.css
+    Date: 9/3/2026
+*/
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body, header,nav,main,footer, img, h1,h3{
+  background-color: #e3eaf8;
+}
+
+image {
+  max-width: 100%;
+  display: block;
+
+}
