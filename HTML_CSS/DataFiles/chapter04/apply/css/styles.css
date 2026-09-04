@@ -1,0 +1,65 @@
+/* CSS Reset */
+body,header,nav,main,footer,img,h1,h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #e3eaf8;
+}
+
+img {
+  max-width: 100%;
+}
+
+header h1{
+  text-align: center;
+  font-size: 3em;
+  font-family:Georgia, 'Times New Roman', Times, serif 'Courier New', Courier, monospace;
+  padding: 3%;
+  color: #101a2d;
+}
+
+/* Navigation Styles */
+nav{
+  background-color: #101a2d;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: verdana, Arial, sans-serif;
+  font-weight: bold;
+  display: block;
+  color: #e3eaf8;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left:2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+/* Navigation Area */
+
+nav {
+
+}
+
+nav ul {
+
+}
+
+nav li {
+
+}
+
+nav li select {
+  
+}
