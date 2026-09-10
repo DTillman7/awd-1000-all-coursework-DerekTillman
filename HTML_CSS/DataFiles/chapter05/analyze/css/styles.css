@@ -21,6 +21,12 @@ img {
     display: block;
 }
 
+/* Style rules for mobile viewport */
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
 /* Style rules for header content */
 header h1 {
     text-align: center;
