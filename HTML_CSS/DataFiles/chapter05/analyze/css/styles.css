@@ -1,7 +1,7 @@
 /*
-    Student Name
-	File Name: 
-	Current Date: 
+    Student Name: Derek TIllman
+	File Name: styles.css
+	Current Date: 9/10/26
 */
 
 /* CSS reset */
@@ -25,6 +25,11 @@ img {
 nav ul {
     list-style-type: none;
     display: inline-block;
+}
+
+/* style rule hides the tablet-desktop class */
+.tablet-desktop {
+    display: none;
 }
 
 /* Style rules for header content */
@@ -68,6 +73,26 @@ main {
 
 main p {
     font-size: 1.25em;
+}
+
+.btn {
+    background-color: #375f1b;
+    padding: 2% 2%;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn a {
+    color: #ebf7e3;
+    text-decoration: none;
+    font-size: 1.25em;
+    display: block;
+}
+
+.corner {
+    border-radius: 12px;
 }
 
 /* Style rules for footer content */
