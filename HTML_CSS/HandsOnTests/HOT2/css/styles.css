@@ -1,0 +1,58 @@
+/* Css reset rule */
+body, header, nav, main, footer {
+  margin: 0;
+  padding: 0;
+  border: 0; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Global Styles */
+
+/* Header Styles */
+
+header {
+  background-color: #0A2342;
+  color: #ffff;
+  padding: 20px;
+}
+
+nav li a {
+  color: #f4f4f4;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Main Content Styles */
+
+#hero {
+  background-image: url("../images/pizzabackground.jpg");
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+img {
+  float: left;
+  clear: both;
+}
+
+.menu-item {
+  border: 1px;
+  padding: 12px 16px;
+}
+span p{
+  color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #848884;
+  color:#f4f4f4;
+  text-align: center;
+}

@@ -19,6 +19,18 @@
     display: block;
    }
 
+   /*style rules for mobile viewport */
+
+   /*style rules to show mobile class and hide tab-desk class */
+
+   .mobile {
+    display: block;
+   }
+
+   .tab-desk {
+    display: none;
+   }
+
    /* Styles rule for navigation area */
 
    nav {
