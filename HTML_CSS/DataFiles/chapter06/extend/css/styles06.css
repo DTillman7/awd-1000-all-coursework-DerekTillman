@@ -1,7 +1,7 @@
 /*
-Student:
-Date:
-File Name: 
+Student: Derek Tillman
+Date: 9/16/2026
+File Name: styles.css
 */
 
 /* CSS Reset */
@@ -39,7 +39,17 @@ main {
 }
 
 /* Gradient style rules */
+.gradient1 {
+    background: linear-gradient(to right, #67afcb, #1a3e4c, 25%);
+}
 
+.gradient2 {
+    background: linear-gradient(to left, #d4f7ec, #448d76, 90%);
+}
+
+.gradient3 {
+    background: linear-gradient(to top left, #efddfd, #36065b);
+}
 
 /* Style rule for footer */
 footer {
