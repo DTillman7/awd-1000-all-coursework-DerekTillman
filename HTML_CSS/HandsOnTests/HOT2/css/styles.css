@@ -1,8 +1,8 @@
 /* Css reset rule */
 body, header, nav, main, footer {
-  margin: 0;
-  padding: 0;
-  border: 0; 
+  margin:0;
+  padding:0;
+  border:0; 
 }
 
 body {

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Lexie';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lexie Readable'),
+       local('Lexie-Readable'),
+       url('lexiereadable-regular-webfont.woff2') format('woff2'),
+       url('lexiereadable-regular-webfont.woff') format('woff');
+
+}
+@font-face {
+  font-family: 'Lexie';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lexie Readable'),
+       local('Lexie-Readable'),
+       url('lexiereadable-bold-webfont.woff2') format('woff2'),
+       url('lexiereadable-bold-webfont.woff') format('woff');
+}
