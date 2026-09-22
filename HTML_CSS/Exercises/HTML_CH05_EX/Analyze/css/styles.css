@@ -77,8 +77,8 @@ main p {
 
 .btn {
     background-color: #375f1b;
-    padding: 2% 2%;
-    margin: auto;
+    padding: 2%;
+    margin: 2% auto;
     width: 80%;
     text-align: center;
     border-radius: 5px;
