@@ -168,13 +168,12 @@
 
    /*Media Query for Desktop Viewport*/
    
-   @media screen and (min-width: 1000px), print {
-  /*Desktop Viewport: Style rule for header*/
+   @media screen and (min-width: 100px), print {
+    /*Desktop Viewport: Style rules for nav area */
   nav li {
     font-size: 1.5em;
   }
 
-  /*Desktop Viewport: Style rules for nav area */
   nav li a {
     padding: 0.5em 1.5em;
   }
