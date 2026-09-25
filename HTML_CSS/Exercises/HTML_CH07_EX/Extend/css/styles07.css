@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Derek Tillman
+Date:9/24/26
+File Name: styles07.css 
 */
 
 /* CSS Reset */
@@ -38,4 +38,9 @@ aside {
 footer {
 	font-size: .70em;
 	text-align: center;
+}
+
+article {
+	column-count: 3;
+	column-rule: 4px inset;
 }

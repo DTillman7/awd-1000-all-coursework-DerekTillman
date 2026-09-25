@@ -52,11 +52,13 @@ main {
 section {
 	background-color: #183440;
 	color: #fff;
-	margin: 4% 3%;
+	margin-top: 4%;
+	padding: 3%;
 }
 
 article {
-	margin: 1% 2%;
+	margin-top: 1%;
+	padding: 2%;
 }
 
 aside {
@@ -79,13 +81,21 @@ footer {
 			grid-template-columns: repeat(2, 1fr);
 			gap: 20px;
 		}
+
+		aside {
+			grid-column: span 2;
+		}
     
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
-.grid {
-	grid-template-columns: repeat(4, 1fr);
-}
+	.grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+	aside {
+		grid-column: span 4;
+	}
     
 }
