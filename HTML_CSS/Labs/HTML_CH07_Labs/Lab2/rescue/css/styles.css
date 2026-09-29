@@ -197,6 +197,16 @@
     nav li a {
       padding: 0.5em;
     }
+
+    .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  aside {
+    grid-column: 1 / span 2;
+  }
    }
 
    /*Media Query for Desktop Viewport*/
@@ -215,6 +225,18 @@
     color: #2a1f14;
     background-color: #f6eee4;
   }
+
+  .grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    aside {
+      grid-column: 1 / span 3;
+      font-size: 2em;
+    }
+
+
    }
     /*Desktop Viewport: Style rules for main content*/
     #info ul {

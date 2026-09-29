@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Derek Tillman, 9/29/26 -->
+<html lang="en">
+<head>
+	<title>Form Example</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles08.css">
+</head>
+<body>
+
+	<div id="container">
+
+        <!-- Use the main area to add the main content of the webpage -->
+        <main>
+
+    <form class="grid">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fName" id="fName">
+
+            <label for="Lname">Last Name:</label>
+            <input type="text" name="lName" id="lName">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="telphone">Telphone Number:</label>
+            <input type="tel" name="phone" id="phone">
+
+        </fieldset>
+    </form>
+
+    <form class="grid">
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label for="cname">Card Name:</label>
+            <input type="text" name="cName" id="cName">
+
+            <label for="cnum">Card Number</label>
+            <input type="number" name="cNum" id="cNum">
+
+            <label for="exDate" placeholder="MM/YY">Expiration date</label>
+            <input type="text" name="expDate" id="expDate" placeholder="MM/YY">
+
+            <label for="ccv">CCV</label>
+            <input type="number" name="ccv" id="ccv">
+        </fieldset>
+
+        <button type="submit" formmethod="post" class="btn">Submit</button>
+    </form>
+
+</main>
+
+<!-- Use the footer area to add webpage footer content -->
+<footer>
+    <p>Derek Tillman, 9/29/26</p>
+</footer>
+
+	</div>
+
+</body>
+</html>
