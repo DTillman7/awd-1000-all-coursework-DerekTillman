@@ -3,7 +3,7 @@
   File Name: styles.css */
 
   /* CSS Reset */
-  body, header, nav, main, footer, img, h1, h3 {
+  body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,6 +21,7 @@
 
    /*style rules for mobile viewport */
 
+
    /*style rules to show mobile class and hide tab-desk class */
 
    .mobile {
@@ -31,6 +32,20 @@
     display: none;
    }
 
+   /*style rules for header area */
+
+   .mobile h1, .mobile h3 {
+    padding: 2%;
+    text-align: center;
+   }
+
+   .mobile h1  {
+      font-family: 'Emblema One', cursive;
+   }
+
+   .mobile h3 {
+    font-family: 'Lora', serif;
+   }
    /* Styles rule for navigation area */
 
    nav {
@@ -38,13 +53,15 @@
    }
 
    nav ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     text-align: center;
    }
 
    nav li {
-    display: inline-block;
+    display: block;
+    border-top-width: 0.5px;
+    color: #f6eee4;
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
@@ -55,12 +72,13 @@
     color: #f6eee4;
     padding: 0.5em 2em;
     text-decoration: none;
+    
    }
 
-   /*styles rules for main  content */ 
+   /*styles rules for main content */ 
    main {
     padding: 2%;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Lora', serif;
    }
 
    main p {
@@ -68,11 +86,11 @@
    }
 
    main h3 {
-    padding: 2%;
+    padding-top: 2%;
    }
 
    main ul {
-    list-style: square;
+    list-style-type: square;
    }
 
    .link {
@@ -84,13 +102,33 @@
 
    .action {
     font-size: 1.75em;
-    text-decoration: none;
     font-weight: bold;
     text-align: center;
    }
 
+   .round {
+    border-radius: 6px;
+   }
+
+   #info ul {
+    margin-left: 10%;
+   }
+
    #contact {
     text-align: center;
+   }
+
+   .tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+   }
+
+   .tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
    }
 
    /*styles rules for footer content */

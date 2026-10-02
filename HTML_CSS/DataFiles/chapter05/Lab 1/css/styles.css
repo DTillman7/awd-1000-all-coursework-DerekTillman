@@ -5,7 +5,7 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1 {
+body, header, nav, main, footer, img, h1, ul {
   margin:0;
   padding:0;
   border:0;
@@ -17,7 +17,7 @@ img {
   display: block;
 }
 
-/* STyle rules for mobile viewport */
+/* Style rules for mobile viewport */
 
 
 /*Hide tab-desk class */
@@ -42,15 +42,16 @@ nav {
 }
 
 nav ul {
-  list-style-type: block;
+  list-style-type: none;
   text-align: center;
-  border-top: 1px solid #e539fc;
 }
 
 nav li {
   display: inline-block;
   font-size: 2em;
-}
+  display: block;
+  border-top: 1px solid #e539fc;
+} 
 
 nav li a {
   display: block;
@@ -68,9 +69,11 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
+
 main p {
   font-size: 1.25em;
 }
+
 
 .action {
   font-size: 1.25em;
@@ -85,7 +88,7 @@ main p {
 #info {
   clear: left;
   background-color: #c0caf7;
-  padding: 1% 2%;;
+  padding: 1% 2%;
 }
 
 #info ul {
@@ -94,13 +97,14 @@ main p {
 
 .round {
   border-radius: 8px;
+  /*background-color: #fff;*/
 }
 
 #contact {
   text-align: center;
 }
 
-#conact .email-link{
+#contact .email-link{
   color: #4645a8;
   text-decoration: none;
   font-weight: bold;
