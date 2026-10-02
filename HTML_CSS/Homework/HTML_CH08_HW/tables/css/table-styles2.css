@@ -1,0 +1,62 @@
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+table {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid #000;
+}
+
+table, tr, th, td {
+	border-collapse: collapse;
+	padding: 2%;
+}
+
+caption {
+	font-size: 2em;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+th, td {
+	border: 1px solid #000;
+}
+
+td {
+	text-align: center;
+}
+
+tr:nth-child(odd) {
+	background-color: #ff0;
+}
+
+tr:nth-child(even) {
+	background-color: #fff;
+}
+
+th[rowspan] {
+background-color: #fff;
+}
+
+th[colspan] {
+  text-align: right;
+}
+
+#table2 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+footer {
+	font-size: .70em;
+	text-align: center;
+}
