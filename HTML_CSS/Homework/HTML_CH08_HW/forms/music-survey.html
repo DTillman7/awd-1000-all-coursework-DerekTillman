@@ -7,144 +7,135 @@
   <title>Music Survey</title>
 </head>
 <body>
-    <div>
-      <div id="container">
+    <div id="container">
       <h2>Music Survey</h2>
-      <form method="post">
-        <fieldset>
-            <label for="fname">First Name:</label>
-            <input type="text" name="fName" id="fName">
-          <br>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email">
-        </fieldset>
+       <label for="fname">First Name:</label>
+      <input type="text" name="fName" id="fName">
+      <br>
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email">
 
-        <form class="grid" method="post">
+        <form class="grid">
          <fieldset>
             <legend>Select your favorite music genre</legend>
-            <label for="rockmusic">
-            <input type="radio" name="interest" id="rockmusic" value="Rock Music">Rock
+            <label>
+            <input type="radio" name="interest" value="Rock Music">Rock
           </label>
             <br>
 
-            <label for="pop">
+            <label>
             <input type="radio" name="interest" id="pop" value="Pop Music">Pop
           </label>
           <br>
 
-            <label for="HipHop">
-            <input type="radio" name="interest" id="HipHop" value="Hip Hop Music">Hip Hop
+            <label>
+            <input type="radio" name="interest" id="hiphop" value="Hip Hop Music">Hip Hop
           </label>
           <br>
 
-            <label for="eletronic">
+            <label>
             <input type="radio" name="interest" id="eletronic" value="Electronic Music">Electronic
           </label>
           <br>
 
-          <label for="jazz">
+          <label>
             <input type="radio" name="interest" id="jazz" value="Jazz Music">Jazz
           </label>
           <br>
 
-          <label for="classical">
+          <label>
             <input type="radio" name="interest" id="classical" value="Classical Music">Classical
           </label>
           <br>
 
-          <label for="country">
+          <label >
             <input type="radio" name="interest" id="country" value="Country Music">Country
           </label>
           <br>
 
-          <label for="r&b">
-            <input type="radio" name="interest" value="R&B Music">R&B
+          <label >
+            <input type="radio" name="interest" id="rb" value="R&B Music">R&amp;B
           </label>
           <br>
-          
-          <label for="other">
+
+          <label>
             <input type="radio" name="interest" id="other" value="Other Music">Other
           </label>
          </fieldset>
-        </form>
-
-        <form class="grid" method="post">
+          <br>
+          
          <fieldset>
             <legend>Select what music services that you use (one or more)</legend>
-            <label for="spotify">
+            <label>
             <input type="checkbox" name="services" id="spotify" value="Spotify">Spotify
             </label>
             <br>
 
-            <label for="apple">
-            <input type="checkbox" name="services" id="apple" value="Apple Music">Apple Music
+            <label>
+            <input type="checkbox" name="apple" id="apple" value="Apple Music">Apple Music
             </label>
             <br>
 
-            <label for="amazon">
-            <input type="checkbox" name="services" id="amazon" value="Amazon Music">Amazon Music
+            <label>
+            <input type="checkbox" name="amazon" id="amazon" value="Amazon Music">Amazon Music
             </label>
             <br>
 
-            <label for="youtube">
-            <input type="checkbox" name="services" id="youtube" value="YouTube Music">YouTube Music
+            <label>
+            <input type="checkbox" name="youtube" id="youtube" value="YouTube Music">YouTube Music
             </label>
             <br>
 
-            <label for="siriusXM">
-            <input type="checkbox" name="services" id="siriusXM" value="SiriusXM">SiriusXM
+            <label>
+            <input type="checkbox" name="siriusXM" id="siriusXM" value="SiriusXM">SiriusXM
             </label>
             <br>
 
-            <label for="tidal">
-            <input type="checkbox" name="services" id="tidal" value="Tidal">Tidal
+            <label>
+            <input type="checkbox" name="tidal" id="tidal" value="Tidal">Tidal
             </label>
             <br>
 
-            <label for="qobuz">
-            <input type="checkbox" name="services" id="qobuobuz" value="Qobuz">Qobuz
+            <label>
+            <input type="checkbox" name="qobuz" id="qobuz" value="Qobuz">Qobuz
             </label>
             <br>
 
-            <label for="pandora">
-            <input type="checkbox" name="services" id="pandora" value="Pandora">Pandora
+            <label>
+            <input type="checkbox" name="pandora" id="pandora" value="Pandora">Pandora
             </label>
             <br>
 
-            <label for="iheart">
-            <input type="checkbox" name="services" id="iheart" value="iHeartRadio">iHeartRadio
+            <label>
+            <input type="checkbox" name="ihearthadio" id="iheart" value="iHeartRadio">iHeartRadio
             </label>
             <br>
 
-            <label for="deezer">
-            <input type="checkbox" name="services" id="deezer" value="Deezer">Deezer
+            <label>
+            <input type="checkbox" name="deezer" id="deezer" value="Deezer">Deezer
             </label>
             <br>
 
-            <label for="soundcloud">
-            <input type="checkbox" name="services" id="soundcloud" value="SoundCloud">SoundCloud
+            <label>
+            <input type="checkbox" name="soundcloud" id="soundcloud" value="SoundCloud">SoundCloud
             </label>
             <br>
 
-            <label for="other">
-            <input type="checkbox" name="services" id="other" value="Other Music Services">Other Music
+            <label>
+            <input type="checkbox" name="serviceother" id="serviceother" value="Other Music Services">Other Music
             </label>
           </fieldset>
-        </form>
+          <br>
 
-        <form class="grid" method="post">
-          <label>
-            <label for="mood">What does music do for you?</label>
-            <fieldset>
-            <select name="mood" id="mood">
+            <label>What does music do for you?</label>
+            <br>
+            <select name="mood" id="mood" size="3">
               <option value="relax">Relax</option>
               <option value="motivate">Motivate</option>
               <option value="focus">Focus</option>
               <option value="reflect">Reflect</option>
             </select>
-            </fieldset>
-          </label>
-          <br>
+            <br>
 
           <h3>What's your favorite song and what does it mean to you?</h3>
           <br>
@@ -153,7 +144,6 @@
 
           <button type="submit" id="submit" value="Submit" class="btn">Submit</button>
           <button type="reset" value="Reset" id="reset" class="btn">Reset</button>
-        <!--<button type="reset" id="reset" value="Reset" class="btn">Reset</button>-->
       </form>
     </div>
   <footer>
