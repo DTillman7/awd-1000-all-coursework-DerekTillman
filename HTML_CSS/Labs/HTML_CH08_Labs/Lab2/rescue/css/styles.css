@@ -24,7 +24,7 @@
 
    /*style rules to show mobile class and hide tab-desk class */
 
-   .mobile {
+   .mobile, .mobile-table {
     display: block;
    }
 
@@ -133,7 +133,7 @@
     margin-left: 10%;
    }
 
-   #contact {
+   #contact, #form h2 {
     text-align: center;
    }
 
@@ -149,6 +149,31 @@
     text-decoration: none;
     font-weight: bold;
    }
+
+   /*Style rules for form elements*/
+   fieldset, input, textarea {
+    margin-bottom: 2%;
+   }
+
+   fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+   }
+
+   label {
+    display: block;
+    padding-top: 2%;
+   }
+
+   #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 2%;
+    background-color: #76593a;
+    color: #f6eee4;
+    font-size: 1.25em;
+    border-radius: 10px;
+    }
 
    /*styles rules for footer content */
    footer {
@@ -167,6 +192,10 @@
    /*Media Query for Tablet Viewport */
    @media screen and (min-width: 620px), print {
     /*Tablet Viewport: Show tab-desk class, hide mobile class*/
+    .mobile-table {
+      display: none;
+    }
+
     .tab-desk {
       display: block;
     }
@@ -188,6 +217,12 @@
       grid-column: 1 / span 3;
       font-size: 2em;
     }
+    /*Tablet Viewport: Style rule for form element*/
+    form {
+      width: 70%;
+      margin: 0 auto;
+    }
+    
     /*Tablet Viewport: Style rules for nav area*/
     nav li {
       border-top: none;
@@ -236,6 +271,39 @@
       font-size: 2em;
     }
 
+    /*Style rules for table*/
+    table {
+      border: 1px solid #2a1f14;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 1%;
+    } 
+
+    th {
+      background-color: #2a1f14;
+      color: #fff;
+      font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #deccba;
+    }
+
+    /*Desktop Viewport: Styles rues for form elelments*/
+    form {
+      width: auto;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 1 / span 2;
+    }
 
    }
     /*Desktop Viewport: Style rules for main content*/
