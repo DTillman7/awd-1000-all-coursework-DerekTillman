@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>HOT 1-8</title>
+</head>
+<body>
+  <header>
+    <h1>Ranken Student Activities</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Upcoming Events</h2>
+      <table>
+        <caption>October Student Events</caption>
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Game Night</td>
+            <td>October 8</td>
+            <td>6:00 PM</td>
+            <td>Student Center</td>
+          </tr>
+          <tr>
+            <td>Coding Challenge</td>
+            <td>October 15</td>
+            <td>4:00 PM</td>
+            <td>Room 204</td>
+          </tr>
+          <tr>
+            <td>Fall Cookout</td>
+            <td>October 22</td>
+            <td>5:30 PM</td>
+            <td>Courtyard</td>
+          </tr>
+          <tr>
+            <td>Halloween Party</td>
+            <td>October 29</td>
+            <td>7:00 PM</td>
+            <td>Student Center</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h2>Event Registration</h2>
+      <p>If you wanna register for any of these events, please fill out the form below:</p>
+      <form action="#" method="post">
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <h3>Select an Event:</h3>
+          <input type="checkbox" id="game-night" name="gamenight" value="Game Night" required>
+          <label for="game-night">Game Night</label>
+          <input type="checkbox" id="coding-challenge" name="codingchallenge" value="Coding Challenge" required>
+          <label for="coding-challenge">Coding Challenge</label>
+          <input type="checkbox" id="fall-cookout" name="fallcookout" value="Fall Cookout" required>
+          <label for="fall-cookout">Fall Cookout</label>
+          <input type="checkbox" id="halloween-party" name="halloweenclass" value="Halloween Party" required>
+          <label for="halloween-party">Halloween Party</label>
+
+          <h3>Student Type:</h3>
+          <input type="radio" id="full-time" name="student-type" value="Undergraduate" required>
+          <label for="full-time">Full-Time Student</label>
+          <input type="radio" id="part-time" name="student-type" value="Graduate" required>
+          <label for="part-time">Part-Time Student</label>
+
+          <h3>Interests:</h3>
+          <input type="checkbox" id="gaming" name="gaming" value="Gaming" required>
+          <label for="gaming">Gaming</label>
+          <input type="checkbox" id="coding" name="coding" value="Coding" required>
+          <label for="coding">Coding</label>
+          <input type="checkbox" id="sport" name="sport" value="Sports" required>
+          <label for="sport">Sports</label>
+          <input type="checkbox" id="communityevents" name="communityevents" value="Community Events" required>
+          <label for="communityevents">Community Events</label>
+
+          <h3>Comments or questions:</h3>
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+          <br>
+
+          <button type="submit" id="submit-btn">Submit Registration</button>
+          <button type="reset" id="reset-btn">Reset Form</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Created by yours truly: Derek Tillman</p>
+  </footer>
+</body>
+</html>

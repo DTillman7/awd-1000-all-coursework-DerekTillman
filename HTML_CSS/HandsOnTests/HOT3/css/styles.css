@@ -1,0 +1,139 @@
+body {
+  background-color: #f4f6f8;
+  color: #000000;
+  font-family: "Black Ops One", system-ui;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #cc0000;
+  padding: 10px 20px;
+}
+
+nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+/* :hover for navigation links */
+nav a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: "Black Ops One", system-ui;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border: 1px solid #bdc3c7;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #bdc3c7;
+}
+
+thead {
+  background-color: #b3b3b3;
+  color: #ffffff;
+}
+
+/* :nth-child() for alternating table rows */
+tbody tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Form styling & consistent appearance for text inputs, email input, select menu, and textarea */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #333333;
+  background-color: #fafafa;
+  border: 1px solid #bdc3c7;
+  box-sizing: border-box;
+  font-family: "Tektur", sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Tektur", sans-serif;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Removes double borders */
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #dddddd; /* Visible borders */
+  padding: 12px 15px;       /* Padding inside table cells */
+  text-align: left;
+}
+
+th {
+  background-color: #cc0000; /* Styled header background */
+  color: white;             /* Styled header text color */
+  font-weight: bold;
+}
+
+tr, p, label{
+  font-family: "Tektur", sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternating row styling */
+}
+
+tr:hover {
+  background-color: #ddd;    /* Optional hover effect for better interactivity */
+}
