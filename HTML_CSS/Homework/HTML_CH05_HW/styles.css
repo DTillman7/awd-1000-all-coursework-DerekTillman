@@ -1,0 +1,88 @@
+ *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  box-shadow: 5px 10px #888888;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #000;
+}
+
+/* Sticky Navigation Bar */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #222;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+/* Stacked Vertically on Small Screens (Mobile-First default) */
+nav a {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover Pseudo-class */
+nav li a:hover {
+  color: #00b300;
+}
+
+/* Content Box with Rounded Corners */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Image */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional rounded corners on image */
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Media Query for Large Screens (Horizontal Navigation) */
+@media (min-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 768px) {
+      /* Increased heading font size */
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      /* Horizontal Navigation for larger screens */
+      nav ul {
+        display: flex;
+        gap: 20px;
+        background-color: transparent;
+        padding: 0;
+      }
+    }
