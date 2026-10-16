@@ -65,6 +65,12 @@ img {
   margin-bottom: 1rem;
 }
 
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
 /* Media Query for Large Screens (Horizontal Navigation) */
 @media (min-width: 768px) {
   .nav-links {

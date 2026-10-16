@@ -1,0 +1,46 @@
+h1, h2 {
+    /* c. Hex Color Value */
+    color: #2c3e50; 
+    text-align: center;
+}
+
+/* k. Font Shadow */
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* f. Descendant Selector: Targets any 'li' that exists inside a 'nav' */
+nav ul li {
+    display: inline-block;
+    /* a. Relative Measurement: Uses 'em' */
+    margin-right: 1.5em; 
+}
+
+/* i. Pseudo-class Selector: Styles links with the exact same :hover and :focus state */
+a:hover, a:focus {
+    /* d. RGB Color Value */
+    color: rgb(231, 76, 60); 
+    text-decoration: underline;
+    outline: none;
+}
+
+/* h. Child Selector: Targets ONLY paragraphs that are direct children of .content-box */
+.content-box > p {
+    /* j. Shorthand Font Property: includes style, weight, size, line-height, and family */
+    /* Syntax: font: font-style font-weight font-size/line-height font-family; */
+    font: italic bold 18px/1.6 "Arial", sans-serif;
+}
+
+/* General Layout Styling to meet remaining unit requirements */
+body {
+    /* b. Absolute Measurement: Uses 'px' */
+    padding: 40px; 
+    background-color: #f8f9fa;
+}
+
+.content-box {
+    /* e. RGBA Color Value: Includes a 0.1 alpha channel opacity transparency */
+    background-color: rgba(0, 0, 0, 0.05); 
+    border-radius: 8px;
+    padding: 20px;
+}
