@@ -9,3 +9,12 @@
 */
 
 //define variables for service name and service speed
+const service1Name = "Basic";
+const service2Name = "Express";
+const service3Name = "Extreme";
+const service4Name = "Ultimate";
+
+const service1Speed = "0 Mbps";
+const service2Speed = "100 Mbps";
+const service3Speed = "500 Mbps";
+const service4Speed = "1 Gig";

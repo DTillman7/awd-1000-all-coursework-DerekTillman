@@ -59,6 +59,9 @@ header {
 
 header h1 {
   font-family: "DM Serif Display";
+  font-size: 1.5em;
+  padding: 4%;
+  margin-right: 15%;
 }
 
 /* Style rules for natigation area */ 
@@ -66,10 +69,39 @@ nav {
   background-color: #373684;
 }
 
-.mobile-nav a {
-  color:#fff;
+nav ul {
+  list-style-type: none;
+  text-align: center;
 }
 
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mobile-nav a {
+  color:#fff;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.menu-icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu-icon div {
+  height: 50px;
+  width: 50px;
+  background-color: #373684;
+}
 /* Style rules for main content */
 main {
   padding: 2%;
@@ -175,6 +207,9 @@ main p {
 @media screen and (min-width: 550px), print {
   .tab-desk {
     display: block;
+    #menu-link {
+      display: none;
+    }
   }
 
   .mobile {
@@ -197,6 +232,12 @@ main p {
     display: inline;
   }
 
+  header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+  }
+
   /*Tablet VIewport: Style rules for nav area*/
 
   nav li {
@@ -213,6 +254,11 @@ main p {
   nav li a {
     padding: 0.25em 0.5em;
   }
+
+  nav ul {
+  list-style-type: none;
+  text-align: center;
+}
 
 
   /*Tablet Viewport: Style rule for map */
@@ -243,6 +289,7 @@ main p {
   nav li a:hover {
     color: #373684;
     background-color: #e5e9fc;
+    transform: scale(1.2);
   }
 
   /*Desktop Viewport: Style rules for main content*/

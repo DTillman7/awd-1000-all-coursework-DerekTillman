@@ -17,18 +17,22 @@
   <title>Home Page</title>
 </head>
 <body>
+  <nav class="mobile-nav">
+      <div id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="menu-icon" onclick="hamburger()">
+        <div>&#9776;</div>
+      </a>
+   </nav>
   <header>
     <h1><span class="tab-desk">&#9836;</span>Strike A Chord</h1>
   </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="lessons.html">Lessons</a></li>
-      <li><a href="instructors.html">Instructors</a></li>
-      <li> <a href="rentals.html">Rentals</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <nav class="tab-desk"></nav>
   <!-- Hero Image -->
    <div class="tab-desk" id="hero">
     <img src="images/music-notes.png" alt="colorful music notes">
@@ -43,6 +47,7 @@
     <p>&copy; Copyright 2021. All Rights Reserved.</p>
     <p><a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
 

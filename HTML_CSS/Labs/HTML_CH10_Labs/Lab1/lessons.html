@@ -21,18 +21,22 @@
   <title>Lessons</title>
 </head>
 <body>
+  <!-- Mobile Nav -->
   <header>
-    <h1><span class="tab-desk">&#9836;</span>Strike A Chord</h1>
+    <nav class="mobile-nav">
+      <div id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="menu-icon" onclick="hamburger()">
+        <div>&#9776;</div>
+      </a>
+   </nav>
+    <h1>&#9836;Strike A Chord</h1>
   </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="lessons.html">Lessons</a></li>
-      <li><a href="instructors.html">Instructors</a></li>
-      <li> <a href="rentals.html">Rentals</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
   <main>
     <section>
       <h2>Private Lessons</h2>
@@ -81,6 +85,7 @@
         <p>We offer violin lessons for all ages, beginning at age six. Our violin lessons include a variety of music styles, from fiddle to classical. Our instructors will help you fine-tune techniques and accomplish your musical goals. We work with you to create a customized program, tailored to your needs.</p>
       </section>
 
+      <section>
       <h4>Violin Spring Performance</h4>
       <audio controls>
         <source src="audio/violin-spring-performance.mp3" type="audio/mp3">
@@ -89,11 +94,11 @@
         Legacy browers do not support the audio element.
       </audio>
     </section>
-
   </main>
   <footer>
     <p>&copy; Copyright 2021. All Rights Reserved.</p>
     <p>lessons@strikeachord.net</p>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
