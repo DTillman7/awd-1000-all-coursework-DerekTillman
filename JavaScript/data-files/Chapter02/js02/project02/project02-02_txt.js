@@ -8,4 +8,18 @@
 
       Filename: project02-02.js
  */
+ function verifyForm() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+
+      if (name && email && phone) {
+            window.alert("Thank You!");
+      }
+      else {
+            window.alert("Please fill in all fields");
+      }
+ }
  
+ document.getElementById('submit').addEventListener('click', verifyForm);
+
