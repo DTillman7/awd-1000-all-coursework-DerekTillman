@@ -8,20 +8,24 @@
 
       Filename: project02-01.js
  */
+document.getElementById("cValue");
+document.getElementById("fValue");
+
+
 function FahrenheitToCelsius(degree) {
       return (degree - 32) / 1.8;
 }
 
 function CelsiusToFahrenheit(degree) {
       return (degree * 1.8) + 32;
-};
+}
 
 document.getElementById("cValue").onchange = function() {
       const cDegree = document.getElementById("cValue").value;
       document.getElementById("fValue").value = CelsiusToFahrenheit(cDegree);
-};
+}
 
 document.getElementById("fValue").onchange = function() {
       const fDegree = document.getElementById("fValue").value;
       document.getElementById("cValue").value = FahrenheitToCelsius(fDegree);
-};
+}

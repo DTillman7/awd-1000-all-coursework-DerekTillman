@@ -8,18 +8,20 @@
 
       Filename: project02-04.js
  */
- const CHICKEN_PRICE = 10.95;
- const HALIBUT_PRICE = 13.95;
- const BURGER_PRICE = 9.95;
- const SALMON_PRICE = 18.95;
- const SALAD_PRICE = 7.95;
- const  SALES_TAX = 0.07;
+ let CHICKEN_PRICE = 10.95;
+ let HALIBUT_PRICE = 13.95;
+ let BURGER_PRICE = 9.95;
+ let SALMON_PRICE = 18.95;
+ let SALAD_PRICE = 7.95;
+ let  SALES_TAX = 0.07;
 
- document.getElementById("chicken").addEventListener("click", calTotal);
-  document.getElementById("halibut").addEventListener("click", calTotal);
-   document.getElementById("burger").addEventListener("click", calTotal);
-    document.getElementById("salmon").addEventListener("click", calTotal);
-     document.getElementById("salad").addEventListener("click", calTotal);
+   
+
+ document.getElementById("chicken").onclick = calTotal;
+  document.getElementById("halibut").onclick = calTotal;
+   document.getElementById("burger").onclick = calTotal;
+    document.getElementById("salmon").onclick = calTotal;
+     document.getElementById("salad").onclick = calTotal;
 
 
 
@@ -27,12 +29,12 @@
  
 
  function calTotal() {
-   const cost = 0;
-   const buyChicken = document.getElementById("chicken").checked;
-   const buyHalibut = document.getElementById("halibut").checked;
-   const buyBurger = document.getElementById("burger").checked;
-   const buySalmon = document.getElementById("salmon").checked;
-   const buySalad = document.getElementById("salad").checked;
+   let cost = 0;
+   let buyChicken = document.getElementById("chicken").checked;
+   let buyHalibut = document.getElementById("halibut").checked;
+   let buyBurger = document.getElementById("burger").checked;
+   let buySalmon = document.getElementById("salmon").checked;
+   let buySalad = document.getElementById("salad").checked;
 
    cost += buyChicken ? CHICKEN_PRICE : 0;
    cost += buyHalibut ? HALIBUT_PRICE : 0;
