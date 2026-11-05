@@ -21,3 +21,31 @@ let reviews = [
 ];
 let reviewTitles = ["My Favorite Workout Game", "Poor Choreography", "Buggy with Poor Tech Support", "Nice Improvement"];
 
+function starImages(rating) {
+   let imageText = "";
+   for (let counter = 1; counter <= rating; counter++) {
+      imageText += "<img alt='star' src='star.png' />";
+   }
+   return imageText;
+}
+
+for (let counter = 0; counter < reviewers.length; counter++) {
+    let reviewCode = "";
+
+    if (reviewType[counter] === "P") {
+        reviewCode += "<table class='prime'>";
+    } else if (reviewType[counter] === "N") {
+        reviewCode += "<table class='new'>";
+    } else {
+        reviewCode += "<table>";
+    }
+
+    reviewCode += "<caption>" + reviewTitles[counter] + "</caption>";
+    reviewCode += "<tr><th>By</th><td>" + reviewers[counter] + "</td></tr>";
+    reviewCode += "<tr><th>Review Date</th><td>" + reviewDates[counter] + "</td></tr>";
+    reviewCode += "<tr><th>Rating</th><td>" + starImages(stars[counter]) + "</td></tr>";
+    reviewCode += "<tr><td colspan='2'>" + reviews[counter] + "</td></tr>";
+    reviewCode += "</table>";
+
+    document.getElementsByTagName("article")[0].insertAdjacentHTML("beforeend", reviewCode);
+}
