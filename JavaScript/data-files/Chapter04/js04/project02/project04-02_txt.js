@@ -3,11 +3,12 @@
       Project 04-02
 
       Application to display a random Jane Austen Quote
-      Author: 
-      Date:   
+      Author: Derek Tillman
+      Date:   11/12/26
 
       Filename: project04-02.js
 */
+"use strict";
 
 
 // Array of Jane Austen Quotes
@@ -33,17 +34,17 @@ window.addEventListener("load", quoteGenerator);
 function quoteGenerator() {
    
    // Number of quotes in the array
-   quoteCount = quotes.length;
+   let quoteCount = quotes.length;
    
    // Generate a random integer to select a quote
-   randomQuote = randomInt(0, quoteCount);
-   
+   let randomQuote = randomInt(0, quoteCount);
+
    // Retrieve a randomly-selected quote
-   quote = quotes[randomQuotes];
+   quotes = quotes[randomQuote];
    
    
    // Display the random quote
-   document.getElementByTagName("blockquote")[1].innerHTML = quote;
+   document.getElementsByTagName("blockquote")[0].innerHTML = quotes;
 }
 
 
