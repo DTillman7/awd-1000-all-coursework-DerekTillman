@@ -60,3 +60,29 @@ model.onchange = function() {
    }     
 }
 
+function showAll(selectList) {
+   let options = selectList.options;
+   let optionLength = options.length;
+   for (let i = 0; i < optionLength; i++) {
+      options[i].style.display = "block";
+   }
+}
+
+function filterSelect(selectList, category) {
+   let options = selectList.options;
+   let optionLength = options.length;
+
+   for (let i = 0; i < optionLength; i++) {
+      if (options[i].className === category) {
+         options[i].style.display = "block";
+      } else {
+         options[i].style.display = "none";
+      }
+   }
+}
+
+selectVehicle.onclick = function() {
+   vehicle.textContent = make.options[make.selectedIndex].text + " " +
+   model.options[model.selectedIndex].text + " " +
+   trim.options[trim.selectedIndex].text;
+};
