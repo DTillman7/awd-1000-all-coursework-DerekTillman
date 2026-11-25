@@ -4,7 +4,7 @@
       Project 07-02
 
       Project to deal cards from a shuffled poker deck
-      Author: 
+      Author: Derek Tillman
       Date:   
 
       Filename: project07-02.js
@@ -28,6 +28,17 @@ let cardsLeft = document.getElementById("cardsLeft");
 let deck = [];
 
 document.getElementById("deal").onclick = function() {   
+      function newDeck() {
+            let deck = deckStr.split(", ");
+            deck.sort(shuffle)
+            return deck;
+      }
+
+      function shuffle(a,b) {
+           return 0.5 - Math.random();
+      } 
+
+
    
 
 }
