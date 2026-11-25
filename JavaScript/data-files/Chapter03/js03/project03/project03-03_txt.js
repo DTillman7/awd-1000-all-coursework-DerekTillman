@@ -58,3 +58,14 @@ links[8] = "https://www.imdb.com/title/tt1375666/?ref_=adv_li_tt";
 links[9] = "https://www.imdb.com/title/tt0137523/?ref_=adv_li_tt";
 
 
+let htmlCode = "";
+for (let i = 0; i < titles.length; i++) {
+    htmlCode += "<tr>";
+    htmlCode += "<td><a href='" + links[i] + "' target='_blank'>" + titles[i] + "</a></td>";
+    htmlCode += "<td>" + summaries[i] + "</td>";
+    htmlCode += "<td>"+ ratings[i] + "</td>";
+    htmlCode += "</tr>";
+}
+
+let tableBody = document.getElementsByTagName("tbody")[0];
+tableBody.innerHTML = htmlCode;
